@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Riyan Syahputra - Devil Anime</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Game Style Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family: 'Orbitron', sans-serif;
+    background: #0b0b0f;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid #ff0000;
+}
+
+.navbar-brand{
+    color:#ff0000 !important;
+    font-weight:900;
+    letter-spacing:2px;
+    text-shadow:0 0 10px #ff0000;
+}
+
+/* HERO */
+.hero{
+    background: radial-gradient(circle at center, #1a0000, #000000 70%);
+    padding: 130px 0;
+}
+
+.hero h1{
+    font-size: 3rem;
+    font-weight:900;
+    color:#ff1a1a;
+    text-shadow:0 0 20px #ff0000, 0 0 40px #990000;
+}
+
+.hero h2{
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+.hero span{
+    color:#ff0000;
+    text-shadow:0 0 15px red;
+}
+
+.btn-devil{
+    background:#ff0000;
+    border:none;
+    color:white;
+    padding:12px 30px;
+    border-radius:50px;
+    box-shadow:0 0 20px red;
+    transition:0.3s;
+}
+
+.btn-devil:hover{
+    background:#990000;
+    box-shadow:0 0 30px #ff0000;
+    transform:scale(1.1);
+}
+
+/* Section Title */
+.section-title{
+    text-align:center;
+    font-weight:900;
+    font-size:2rem;
+    color:#ff0000;
+    text-shadow:0 0 15px red;
+    margin-bottom:40px;
+}
+
+/* About */
+.about-text{
+    color:#cccccc;
+}
+
+/* Skill Icons */
+.glow-icon{
+    font-size:50px;
+    color:#ff0000;
+    text-shadow:0 0 15px red;
+    transition:0.3s;
+}
+
+.glow-icon:hover{
+    transform:scale(1.2);
+    text-shadow:0 0 30px #ff0000;
+}
+
+/* Project Card */
+.project-card{
+    background:#111;
+    border:1px solid #ff0000;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 0 15px rgba(255,0,0,0.3);
+}
+
+.project-card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 0 40px red;
+}
+
+/* Footer */
+footer{
+    background:#000;
+    border-top:1px solid #ff0000;
+    color:#aaa;
+}
+
+.social-icon{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#111;
+    color:#ff0000;
+    font-size:20px;
+    border:1px solid red;
+    transition:0.3s;
+}
+
+.social-icon:hover{
+    background:red;
+    color:black;
+    box-shadow:0 0 20px red;
+}
+</style>
+</head>
+
+<body>
+    <div class="text-center my-5">
+<svg width="300" height="300" viewBox="0 0 200 200">
+
+  <!-- Glow Effect -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Head with subtle up-down animation -->
+  <circle cx="100" cy="110" r="60" fill="#1a0000" stroke="red" stroke-width="4" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Left Horn -->
+  <path d="M60 60 Q40 10 90 50" fill="red" filter="url(#glow)" />
+
+  <!-- Right Horn -->
+  <path d="M140 60 Q160 10 110 50" fill="red" filter="url(#glow)" />
+
+  <!-- Eyes with blink -->
+  <ellipse cx="80" cy="110" rx="10" ry="15" fill="red" filter="url(#glow)">
+    <animate attributeName="ry" values="15;2;15" dur="1.2s" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse cx="120" cy="110" rx="10" ry="15" fill="red" filter="url(#glow)">
+    <animate attributeName="ry" values="15;2;15" dur="1.2s" repeatCount="indefinite" />
+  </ellipse>
+
+  <!-- Smile with subtle glow pulse -->
+  <path d="M75 140 Q100 165 125 140" stroke="red" stroke-width="4" fill="transparent" filter="url(#glow)">
+    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" />
+  </path>
+
+</svg>
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+    <a class="navbar-brand" href="#">DEVIL RIYAN</a>
+    <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold">
+            <li class="nav-item"><a class="nav-link text-light" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#about">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#project">MISSION</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-center">
+<div class="container">
+    <h1>ENTER THE DARK REALM</h1>
+    <h2><span>RIYAN SYAHPUTRA</h2>
+    <p class="mt-3 text-danger">Dark Web Developer • Code From The Abyss</p>
+    <a href="#project" class="btn btn-devil mt-4">START MISSION</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-5" id="about">
+<div class="container">
+    <h3 class="section-title">ABOUT THE DEV</h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6 about-text">
+            Developer dengan pengalaman lebih dari 2 tahun.
+            Menguasai HTML, CSS, JavaScript dan UI/UX.
+            Menciptakan desain dark, modern, dan powerful seperti dunia anime devil.
+        </div>
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+            <i class="bi bi-filetype-html glow-icon mx-3"></i>
+            <i class="bi bi-filetype-css glow-icon mx-3"></i>
+            <i class="bi bi-filetype-js glow-icon mx-3"></i>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- PROJECT -->
+<!-- PROJECT -->
+<section class="py-5" id="project">
+<div class="container">
+    <h3 class="section-title">MISSIONS</h3>
+    <div class="row g-4">
+
+        <!-- Mission 1 -->
+        <div class="col-md-6 col-lg-3 d-flex">
+            <div class="project-card w-100">
+                <img src="HTML2.png" class="img-fluid">
+                <div class="card-body text-center mt-2">
+                    <h6 class="fw-bold text-danger">MISSION 01</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission 2 -->
+        <div class="col-md-6 col-lg-3 d-flex">
+            <div class="project-card w-100">
+                <img src="HTML1.png" class="img-fluid">
+                <div class="card-body text-center mt-2">
+                    <h6 class="fw-bold text-danger">MISSION 02</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission 3 -->
+        <div class="col-md-6 col-lg-3 d-flex">
+            <div class="project-card w-100">
+                <img src="HTML3.png" class="img-fluid">
+                <div class="card-body text-center mt-2">
+                    <h6 class="fw-bold text-danger">MISSION 03</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission 4 -->
+        <div class="col-md-6 col-lg-3 d-flex">
+            <div class="project-card w-100">
+                <img src="HTML4.png" class="img-fluid">
+                <div class="card-body text-center mt-2">
+                    <h6 class="fw-bold text-danger">MISSION 04</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-5" id="contact">
+<div class="container text-center">
+    <h5 class="text-danger">CONNECT WITH THE DEVIL</h5>
+    <div class="d-flex justify-content-center gap-3 mt-3">
+        <div class="social-icon"><i class="bi bi-instagram"></i></div>
+        <div class="social-icon"><i class="bi bi-linkedin"></i></div>
+        <div class="social-icon"><i class="bi bi-github"></i></div>
+    </div>
+    <hr class="border-danger">
+    <p class="mt-3">© 2026 DARK CODE REALM</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
